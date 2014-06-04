@@ -15,7 +15,7 @@
 
 + (NSBundle *)bundle {
     NSBundle *bundle     = [NSBundle bundleForClass:self.class];
-    NSString *bundlePath = [bundle pathForResource:@"Nodelike" ofType:@"bundle"];
+    NSString *bundlePath = [bundle pathForResource:@"NodelikeResources" ofType:@"bundle"];
     if (bundlePath) {
         return [NSBundle bundleWithPath:bundlePath];
     } else {

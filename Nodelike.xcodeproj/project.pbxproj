@@ -6,7 +6,104 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */;
+			buildPhases = (
+				33819FD6193F3F0400BDDF34 /* Build Framework */,
+			);
+			dependencies = (
+				33819FD5193F3EF100BDDF34 /* PBXTargetDependency */,
+			);
+			name = "Nodelike Fat Binary";
+			productName = "Nodelike Fat Binary";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		33819F9E193F31BE00BDDF34 /* NLTTY.h in Headers */ = {isa = PBXBuildFile; fileRef = DA49974618D899400078FCB1 /* NLTTY.h */; };
+		33819F9F193F31BE00BDDF34 /* NSObject+Nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B29189E4F9400CC04D6 /* NSObject+Nodelike.h */; };
+		33819FA1193F31BE00BDDF34 /* NLAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B9B9118A01D0800492856 /* NLAsync.h */; };
+		33819FA3193F31BE00BDDF34 /* NLContextify.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B2C189E501200CC04D6 /* NLContextify.h */; };
+		33819FA5193F31BE00BDDF34 /* NLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F98181F07270093A6FF /* NLContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33819FA7193F31BE00BDDF34 /* NLNatives.h in Headers */ = {isa = PBXBuildFile; fileRef = B578842518945E9900EA1A81 /* NLNatives.h */; };
+		33819FA9193F31BE00BDDF34 /* NLProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F9B181F07320093A6FF /* NLProcess.h */; };
+		33819FAB193F31BE00BDDF34 /* NLBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F9E181F073D0093A6FF /* NLBinding.h */; };
+		33819FAD193F31BF00BDDF34 /* NLFS.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F92181F07090093A6FF /* NLFS.h */; };
+		33819FAF193F31BF00BDDF34 /* NLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5FA1181F07480093A6FF /* NLConstants.h */; };
+		33819FB1193F31BF00BDDF34 /* NLSmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C5B247181319550091FDE8 /* NLSmalloc.h */; };
+		33819FB3193F31BF00BDDF34 /* NLBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C5B24A181321300091FDE8 /* NLBuffer.h */; };
+		33819FB5193F31BF00BDDF34 /* NLUV.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F89181EC45A0093A6FF /* NLUV.h */; };
+		33819FB7193F31BF00BDDF34 /* NLHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F8F181EE3590093A6FF /* NLHandle.h */; };
+		33819FB9193F31C000BDDF34 /* NLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5FA41820EF530093A6FF /* NLTimer.h */; };
+		33819FBB193F31C000BDDF34 /* NLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B53E6996184672F3004E4EF9 /* NLStream.h */; };
+		33819FBD193F31C000BDDF34 /* NLTCP.h in Headers */ = {isa = PBXBuildFile; fileRef = B599FF2A185A7ED000057DD6 /* NLTCP.h */; };
+		33819FBF193F31C000BDDF34 /* NLUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = B541730F189415C000B6636B /* NLUDP.h */; };
+		33819FC1193F31C000BDDF34 /* NLHTTPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B56DEFBC187DC18100FF1D8A /* NLHTTPParser.h */; };
+		33819FC3193F31C000BDDF34 /* NLCares.h in Headers */ = {isa = PBXBuildFile; fileRef = B5061A381815A9B00083AB4B /* NLCares.h */; };
+		33819FC5193F31C100BDDF34 /* Nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B59EA093180CB587005BF5C1 /* Nodelike.h */; };
+		33819FC6193F31DC00BDDF34 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B810D18607587003B40D9 /* tree.h */; };
+		33819FC7193F31DC00BDDF34 /* uv-bsd.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B810E18607587003B40D9 /* uv-bsd.h */; };
+		33819FC8193F31DC00BDDF34 /* uv-darwin.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B810F18607587003B40D9 /* uv-darwin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33819FC9193F31DC00BDDF34 /* uv-errno.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B811018607587003B40D9 /* uv-errno.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33819FCA193F31DC00BDDF34 /* uv-linux.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B811118607587003B40D9 /* uv-linux.h */; };
+		33819FCB193F31DC00BDDF34 /* uv-sunos.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B811218607587003B40D9 /* uv-sunos.h */; };
+		33819FCC193F31DC00BDDF34 /* uv-unix.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B811318607587003B40D9 /* uv-unix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33819FCD193F31DC00BDDF34 /* uv.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B811518607587003B40D9 /* uv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33819FDD193F3F6100BDDF34 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33819FDC193F3F6100BDDF34 /* CoreFoundation.framework */; };
+		33819FE3193F3F6200BDDF34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33819FE1193F3F6200BDDF34 /* InfoPlist.strings */; };
+		33819FE9193F3F9600BDDF34 /* _debugger.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A490D18C526DE00656FA3 /* _debugger.js */; };
+		33819FEA193F3F9600BDDF34 /* _http_agent.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A490E18C526DE00656FA3 /* _http_agent.js */; };
+		33819FEB193F3F9600BDDF34 /* _http_client.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A490F18C526DE00656FA3 /* _http_client.js */; };
+		33819FEC193F3F9600BDDF34 /* _http_common.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491018C526DE00656FA3 /* _http_common.js */; };
+		33819FED193F3F9600BDDF34 /* _http_incoming.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491118C526DE00656FA3 /* _http_incoming.js */; };
+		33819FEE193F3F9600BDDF34 /* _http_outgoing.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491218C526DE00656FA3 /* _http_outgoing.js */; };
+		33819FEF193F3F9600BDDF34 /* _http_server.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491318C526DE00656FA3 /* _http_server.js */; };
+		33819FF0193F3F9600BDDF34 /* _linklist.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491418C526DE00656FA3 /* _linklist.js */; };
+		33819FF1193F3F9600BDDF34 /* _stream_duplex.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491518C526DE00656FA3 /* _stream_duplex.js */; };
+		33819FF2193F3F9600BDDF34 /* _stream_passthrough.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491618C526DE00656FA3 /* _stream_passthrough.js */; };
+		33819FF3193F3F9600BDDF34 /* _stream_readable.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491718C526DE00656FA3 /* _stream_readable.js */; };
+		33819FF4193F3F9600BDDF34 /* _stream_transform.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491818C526DE00656FA3 /* _stream_transform.js */; };
+		33819FF5193F3F9600BDDF34 /* _stream_writable.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491918C526DE00656FA3 /* _stream_writable.js */; };
+		33819FF6193F3F9600BDDF34 /* _tls_legacy.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491A18C526DE00656FA3 /* _tls_legacy.js */; };
+		33819FF7193F3F9600BDDF34 /* _tls_wrap.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491B18C526DE00656FA3 /* _tls_wrap.js */; };
+		33819FF8193F3F9600BDDF34 /* assert.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491C18C526DE00656FA3 /* assert.js */; };
+		33819FF9193F3F9600BDDF34 /* buffer.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491D18C526DE00656FA3 /* buffer.js */; };
+		33819FFA193F3F9600BDDF34 /* child_process.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491E18C526DE00656FA3 /* child_process.js */; };
+		33819FFB193F3F9600BDDF34 /* cluster.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491F18C526DE00656FA3 /* cluster.js */; };
+		33819FFC193F3F9600BDDF34 /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492018C526DE00656FA3 /* console.js */; };
+		33819FFD193F3F9600BDDF34 /* constants.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492118C526DE00656FA3 /* constants.js */; };
+		33819FFE193F3F9600BDDF34 /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492218C526DE00656FA3 /* crypto.js */; };
+		33819FFF193F3F9600BDDF34 /* dgram.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492318C526DE00656FA3 /* dgram.js */; };
+		3381A000193F3F9600BDDF34 /* dns.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492418C526DE00656FA3 /* dns.js */; };
+		3381A001193F3F9600BDDF34 /* domain.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492518C526DE00656FA3 /* domain.js */; };
+		3381A002193F3F9600BDDF34 /* events.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492618C526DE00656FA3 /* events.js */; };
+		3381A003193F3F9600BDDF34 /* freelist.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492718C526DE00656FA3 /* freelist.js */; };
+		3381A004193F3F9600BDDF34 /* fs.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492818C526DE00656FA3 /* fs.js */; };
+		3381A005193F3F9600BDDF34 /* http.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492918C526DE00656FA3 /* http.js */; };
+		3381A006193F3F9600BDDF34 /* https.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492A18C526DE00656FA3 /* https.js */; };
+		3381A007193F3F9600BDDF34 /* module.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492B18C526DE00656FA3 /* module.js */; };
+		3381A008193F3F9600BDDF34 /* net.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492C18C526DE00656FA3 /* net.js */; };
+		3381A009193F3F9600BDDF34 /* node.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492D18C526DE00656FA3 /* node.js */; };
+		3381A00A193F3F9600BDDF34 /* nodelike.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492E18C526DE00656FA3 /* nodelike.js */; };
+		3381A00B193F3F9600BDDF34 /* os.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492F18C526DE00656FA3 /* os.js */; };
+		3381A00C193F3F9600BDDF34 /* path.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493018C526DE00656FA3 /* path.js */; };
+		3381A00D193F3F9600BDDF34 /* punycode.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493118C526DE00656FA3 /* punycode.js */; };
+		3381A00E193F3F9600BDDF34 /* querystring.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493218C526DE00656FA3 /* querystring.js */; };
+		3381A00F193F3F9600BDDF34 /* readline.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493318C526DE00656FA3 /* readline.js */; };
+		3381A010193F3F9600BDDF34 /* repl.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493418C526DE00656FA3 /* repl.js */; };
+		3381A011193F3F9600BDDF34 /* smalloc.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493518C526DE00656FA3 /* smalloc.js */; };
+		3381A012193F3F9600BDDF34 /* stream.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493618C526DE00656FA3 /* stream.js */; };
+		3381A013193F3F9600BDDF34 /* string_decoder.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493718C526DE00656FA3 /* string_decoder.js */; };
+		3381A014193F3F9600BDDF34 /* sys.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493818C526DE00656FA3 /* sys.js */; };
+		3381A015193F3F9600BDDF34 /* timers.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493918C526DF00656FA3 /* timers.js */; };
+		3381A016193F3F9600BDDF34 /* tls.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493A18C526DF00656FA3 /* tls.js */; };
+		3381A017193F3F9600BDDF34 /* tty.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493B18C526DF00656FA3 /* tty.js */; };
+		3381A018193F3F9600BDDF34 /* url.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493C18C526DF00656FA3 /* url.js */; };
+		3381A019193F3F9600BDDF34 /* util.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493D18C526DF00656FA3 /* util.js */; };
+		3381A01A193F3F9600BDDF34 /* vm.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493E18C526DF00656FA3 /* vm.js */; };
+		3381A01B193F3F9600BDDF34 /* zlib.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493F18C526DF00656FA3 /* zlib.js */; };
 		B5061A3A1815A9B00083AB4B /* NLCares.m in Sources */ = {isa = PBXBuildFile; fileRef = B5061A391815A9B00083AB4B /* NLCares.m */; };
 		B50A48EB18C01CDF00656FA3 /* test-timers.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E28418B94E32005E6403 /* test-timers.js */; };
 		B50A48EC18C01CF000656FA3 /* test-timers-zero-timeout.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E28318B94E32005E6403 /* test-timers-zero-timeout.js */; };
@@ -236,6 +333,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59EA08D180CB587005BF5C1;
+			remoteInfo = Nodelike;
+		};
+		3381A01C193F3FA200BDDF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33819FDA193F3F6100BDDF34;
+			remoteInfo = NodelikeResources;
+		};
 		B54173251894341600B6636B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
@@ -253,6 +364,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33819FDB193F3F6100BDDF34 /* NodelikeResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodelikeResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		33819FDC193F3F6100BDDF34 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		33819FE0193F3F6100BDDF34 /* NodelikeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NodelikeResources-Info.plist"; sourceTree = "<group>"; };
+		33819FE2193F3F6200BDDF34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33819FE4193F3F6200BDDF34 /* NodelikeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodelikeResources-Prefix.pch"; sourceTree = "<group>"; };
 		B5061A381815A9B00083AB4B /* NLCares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLCares.h; sourceTree = "<group>"; };
 		B5061A391815A9B00083AB4B /* NLCares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLCares.m; sourceTree = "<group>"; };
 		B50A490218C3882700656FA3 /* NextTick_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextTick_Tests.m; sourceTree = "<group>"; };
@@ -1145,6 +1261,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33819FD8193F3F6100BDDF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33819FDD193F3F6100BDDF34 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173131894341600B6636B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1178,6 +1302,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33819FDE193F3F6100BDDF34 /* NodelikeResources */ = {
+			isa = PBXGroup;
+			children = (
+				33819FDF193F3F6100BDDF34 /* Supporting Files */,
+			);
+			path = NodelikeResources;
+			sourceTree = "<group>";
+		};
+		33819FDF193F3F6100BDDF34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33819FE0193F3F6100BDDF34 /* NodelikeResources-Info.plist */,
+				33819FE1193F3F6200BDDF34 /* InfoPlist.strings */,
+				33819FE4193F3F6200BDDF34 /* NodelikeResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B50A490C18C526DE00656FA3 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -2141,6 +2283,7 @@
 				B5D9EC4B183A342400E321A0 /* libuv */,
 				B59EA090180CB587005BF5C1 /* Nodelike */,
 				B541731C1894341600B6636B /* Nodelike Tests */,
+				33819FDE193F3F6100BDDF34 /* NodelikeResources */,
 				B5B44641180AB78E009ADEF9 /* Frameworks */,
 				B5B44640180AB78E009ADEF9 /* Products */,
 				B572DDA818B4F6E3005E6403 /* StyleSettings.plist */,
@@ -2153,6 +2296,7 @@
 				B59EA08E180CB587005BF5C1 /* libNodelike.a */,
 				B54C1F52180D37280051F826 /* libuv.a */,
 				B54173161894341600B6636B /* Nodelike Tests.xctest */,
+				33819FDB193F3F6100BDDF34 /* NodelikeResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2165,6 +2309,7 @@
 				B5B44642180AB78E009ADEF9 /* Foundation.framework */,
 				B54173171894341600B6636B /* XCTest.framework */,
 				B541731A1894341600B6636B /* UIKit.framework */,
+				33819FDC193F3F6100BDDF34 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2181,7 +2326,63 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		33819F73193F31A000BDDF34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33819FA5193F31BE00BDDF34 /* NLContext.h in Headers */,
+				33819FC8193F31DC00BDDF34 /* uv-darwin.h in Headers */,
+				33819FC9193F31DC00BDDF34 /* uv-errno.h in Headers */,
+				33819FCC193F31DC00BDDF34 /* uv-unix.h in Headers */,
+				33819FCD193F31DC00BDDF34 /* uv.h in Headers */,
+				33819FC6193F31DC00BDDF34 /* tree.h in Headers */,
+				33819FC7193F31DC00BDDF34 /* uv-bsd.h in Headers */,
+				33819FCA193F31DC00BDDF34 /* uv-linux.h in Headers */,
+				33819FCB193F31DC00BDDF34 /* uv-sunos.h in Headers */,
+				33819F9E193F31BE00BDDF34 /* NLTTY.h in Headers */,
+				33819F9F193F31BE00BDDF34 /* NSObject+Nodelike.h in Headers */,
+				33819FA1193F31BE00BDDF34 /* NLAsync.h in Headers */,
+				33819FA3193F31BE00BDDF34 /* NLContextify.h in Headers */,
+				33819FA7193F31BE00BDDF34 /* NLNatives.h in Headers */,
+				33819FA9193F31BE00BDDF34 /* NLProcess.h in Headers */,
+				33819FAB193F31BE00BDDF34 /* NLBinding.h in Headers */,
+				33819FAD193F31BF00BDDF34 /* NLFS.h in Headers */,
+				33819FAF193F31BF00BDDF34 /* NLConstants.h in Headers */,
+				33819FB1193F31BF00BDDF34 /* NLSmalloc.h in Headers */,
+				33819FB3193F31BF00BDDF34 /* NLBuffer.h in Headers */,
+				33819FB5193F31BF00BDDF34 /* NLUV.h in Headers */,
+				33819FB7193F31BF00BDDF34 /* NLHandle.h in Headers */,
+				33819FB9193F31C000BDDF34 /* NLTimer.h in Headers */,
+				33819FBB193F31C000BDDF34 /* NLStream.h in Headers */,
+				33819FBD193F31C000BDDF34 /* NLTCP.h in Headers */,
+				33819FBF193F31C000BDDF34 /* NLUDP.h in Headers */,
+				33819FC1193F31C000BDDF34 /* NLHTTPParser.h in Headers */,
+				33819FC3193F31C000BDDF34 /* NLCares.h in Headers */,
+				33819FC5193F31C100BDDF34 /* Nodelike.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		33819FDA193F3F6100BDDF34 /* NodelikeResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33819FE5193F3F6200BDDF34 /* Build configuration list for PBXNativeTarget "NodelikeResources" */;
+			buildPhases = (
+				33819FD7193F3F6100BDDF34 /* Sources */,
+				33819FD8193F3F6100BDDF34 /* Frameworks */,
+				33819FD9193F3F6100BDDF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NodelikeResources;
+			productName = NodelikeResources;
+			productReference = 33819FDB193F3F6100BDDF34 /* NodelikeResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B54173151894341600B6636B /* Nodelike Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54173271894341600B6636B /* Build configuration list for PBXNativeTarget "Nodelike Tests" */;
@@ -2224,10 +2425,13 @@
 				B59EA08A180CB587005BF5C1 /* Sources */,
 				B59EA08B180CB587005BF5C1 /* Frameworks */,
 				B572DDAC18B4F7CF005E6403 /* Objective-Clean Run Script */,
+				33819F73193F31A000BDDF34 /* Headers */,
+				33819FCE193F3EC200BDDF34 /* Prepare Framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3381A01D193F3FA200BDDF34 /* PBXTargetDependency */,
 				B54C1F93180D37790051F826 /* PBXTargetDependency */,
 			);
 			name = Nodelike;
@@ -2266,11 +2470,72 @@
 				B59EA08D180CB587005BF5C1 /* Nodelike */,
 				B54C1F51180D37280051F826 /* uv */,
 				B54173151894341600B6636B /* Nodelike Tests */,
+				33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */,
+				33819FDA193F3F6100BDDF34 /* NodelikeResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33819FD9193F3F6100BDDF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33819FE9193F3F9600BDDF34 /* _debugger.js in Resources */,
+				33819FEA193F3F9600BDDF34 /* _http_agent.js in Resources */,
+				33819FEB193F3F9600BDDF34 /* _http_client.js in Resources */,
+				33819FEC193F3F9600BDDF34 /* _http_common.js in Resources */,
+				33819FED193F3F9600BDDF34 /* _http_incoming.js in Resources */,
+				33819FEE193F3F9600BDDF34 /* _http_outgoing.js in Resources */,
+				33819FEF193F3F9600BDDF34 /* _http_server.js in Resources */,
+				33819FF0193F3F9600BDDF34 /* _linklist.js in Resources */,
+				33819FF1193F3F9600BDDF34 /* _stream_duplex.js in Resources */,
+				33819FF2193F3F9600BDDF34 /* _stream_passthrough.js in Resources */,
+				33819FF3193F3F9600BDDF34 /* _stream_readable.js in Resources */,
+				33819FF4193F3F9600BDDF34 /* _stream_transform.js in Resources */,
+				33819FF5193F3F9600BDDF34 /* _stream_writable.js in Resources */,
+				33819FF6193F3F9600BDDF34 /* _tls_legacy.js in Resources */,
+				33819FF7193F3F9600BDDF34 /* _tls_wrap.js in Resources */,
+				33819FF8193F3F9600BDDF34 /* assert.js in Resources */,
+				33819FF9193F3F9600BDDF34 /* buffer.js in Resources */,
+				33819FFA193F3F9600BDDF34 /* child_process.js in Resources */,
+				33819FFB193F3F9600BDDF34 /* cluster.js in Resources */,
+				33819FFC193F3F9600BDDF34 /* console.js in Resources */,
+				33819FFD193F3F9600BDDF34 /* constants.js in Resources */,
+				33819FFE193F3F9600BDDF34 /* crypto.js in Resources */,
+				33819FFF193F3F9600BDDF34 /* dgram.js in Resources */,
+				3381A000193F3F9600BDDF34 /* dns.js in Resources */,
+				3381A001193F3F9600BDDF34 /* domain.js in Resources */,
+				3381A002193F3F9600BDDF34 /* events.js in Resources */,
+				3381A003193F3F9600BDDF34 /* freelist.js in Resources */,
+				3381A004193F3F9600BDDF34 /* fs.js in Resources */,
+				3381A005193F3F9600BDDF34 /* http.js in Resources */,
+				3381A006193F3F9600BDDF34 /* https.js in Resources */,
+				3381A007193F3F9600BDDF34 /* module.js in Resources */,
+				3381A008193F3F9600BDDF34 /* net.js in Resources */,
+				3381A009193F3F9600BDDF34 /* node.js in Resources */,
+				3381A00A193F3F9600BDDF34 /* nodelike.js in Resources */,
+				3381A00B193F3F9600BDDF34 /* os.js in Resources */,
+				3381A00C193F3F9600BDDF34 /* path.js in Resources */,
+				3381A00D193F3F9600BDDF34 /* punycode.js in Resources */,
+				3381A00E193F3F9600BDDF34 /* querystring.js in Resources */,
+				3381A00F193F3F9600BDDF34 /* readline.js in Resources */,
+				3381A010193F3F9600BDDF34 /* repl.js in Resources */,
+				3381A011193F3F9600BDDF34 /* smalloc.js in Resources */,
+				3381A012193F3F9600BDDF34 /* stream.js in Resources */,
+				3381A013193F3F9600BDDF34 /* string_decoder.js in Resources */,
+				3381A014193F3F9600BDDF34 /* sys.js in Resources */,
+				3381A015193F3F9600BDDF34 /* timers.js in Resources */,
+				3381A016193F3F9600BDDF34 /* tls.js in Resources */,
+				3381A017193F3F9600BDDF34 /* tty.js in Resources */,
+				3381A018193F3F9600BDDF34 /* url.js in Resources */,
+				3381A019193F3F9600BDDF34 /* util.js in Resources */,
+				3381A01A193F3F9600BDDF34 /* vm.js in Resources */,
+				3381A01B193F3F9600BDDF34 /* zlib.js in Resources */,
+				33819FE3193F3F6200BDDF34 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173141894341600B6636B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2435,6 +2700,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33819FCE193F3EC200BDDF34 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		33819FD6193F3F0400BDDF34 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
 		B52B9B90189EC15600492856 /* Kill Simulator */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2466,6 +2759,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33819FD7193F3F6100BDDF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173121894341600B6636B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2553,6 +2853,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33819FD5193F3EF100BDDF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59EA08D180CB587005BF5C1 /* Nodelike */;
+			targetProxy = 33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */;
+		};
+		3381A01D193F3FA200BDDF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33819FDA193F3F6100BDDF34 /* NodelikeResources */;
+			targetProxy = 3381A01C193F3FA200BDDF34 /* PBXContainerItemProxy */;
+		};
 		B54173261894341600B6636B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B59EA08D180CB587005BF5C1 /* Nodelike */;
@@ -2566,6 +2876,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		33819FE1193F3F6200BDDF34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33819FE2193F3F6200BDDF34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B541731F1894341600B6636B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2577,6 +2895,81 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33819FD1193F3EEB00BDDF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33819FD2193F3EEB00BDDF34 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Testing;
+		};
+		33819FD3193F3EEB00BDDF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33819FE6193F3F6200BDDF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NodelikeResources/NodelikeResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "NodelikeResources/NodelikeResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		33819FE7193F3F6200BDDF34 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NodelikeResources/NodelikeResources-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "NodelikeResources/NodelikeResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Testing;
+		};
+		33819FE8193F3F6200BDDF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NodelikeResources/NodelikeResources-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "NodelikeResources/NodelikeResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		B54173281894341600B6636B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2638,26 +3031,34 @@
 		B59EA0AB180CB588005BF5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Nodelike.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nodelike/Nodelike-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		B59EA0AC180CB588005BF5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Nodelike.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nodelike/Nodelike-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
@@ -2689,6 +3090,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -2722,6 +3124,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -2763,6 +3166,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -2776,13 +3180,17 @@
 		B5C37E4618EB7E82008FA2D5 /* Testing */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Nodelike.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nodelike/Nodelike-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Testing;
 		};
@@ -2820,6 +3228,26 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33819FD1193F3EEB00BDDF34 /* Debug */,
+				33819FD2193F3EEB00BDDF34 /* Testing */,
+				33819FD3193F3EEB00BDDF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33819FE5193F3F6200BDDF34 /* Build configuration list for PBXNativeTarget "NodelikeResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33819FE6193F3F6200BDDF34 /* Debug */,
+				33819FE7193F3F6200BDDF34 /* Testing */,
+				33819FE8193F3F6200BDDF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B54173271894341600B6636B /* Build configuration list for PBXNativeTarget "Nodelike Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
