@@ -2424,7 +2424,6 @@
 			buildPhases = (
 				B59EA08A180CB587005BF5C1 /* Sources */,
 				B59EA08B180CB587005BF5C1 /* Frameworks */,
-				B572DDAC18B4F7CF005E6403 /* Objective-Clean Run Script */,
 				33819F73193F31A000BDDF34 /* Headers */,
 				33819FCE193F3EC200BDDF34 /* Prepare Framework */,
 			);
@@ -2741,20 +2740,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "killall \"iPhone Simulator\"; sleep 2; exit 0;  ";
-		};
-		B572DDAC18B4F7CF005E6403 /* Objective-Clean Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Objective-Clean Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then\n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\"?NL\nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\"\nfi\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
