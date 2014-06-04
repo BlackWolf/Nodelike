@@ -207,7 +207,6 @@
 		B544C74C18BEC37A00925D24 /* Resource_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B544C74B18BEC37A00925D24 /* Resource_Tests.m */; };
 		B54C1F53180D37280051F826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44642180AB78E009ADEF9 /* Foundation.framework */; };
 		B54C1F94180D37810051F826 /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C1F52180D37280051F826 /* libuv.a */; };
-		B54C1F96180D37C80051F826 /* libm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C1F95180D37C80051F826 /* libm.dylib */; };
 		B557E51C18CB80C9006E75AC /* test-event-emitter-add-listeners.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E0D118B94E2E005E6403 /* test-event-emitter-add-listeners.js */; };
 		B557E51D18CB80C9006E75AC /* test-event-emitter-check-listener-leaks.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E0D218B94E2E005E6403 /* test-event-emitter-check-listener-leaks.js */; };
 		B557E51E18CB80C9006E75AC /* test-event-emitter-listeners-side-effects.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E0D318B94E2E005E6403 /* test-event-emitter-listeners-side-effects.js */; };
@@ -1284,7 +1283,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54C1F96180D37C80051F826 /* libm.dylib in Frameworks */,
 				B54C1F53180D37280051F826 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
