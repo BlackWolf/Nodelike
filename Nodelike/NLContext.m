@@ -61,7 +61,9 @@
         @"env":      NSProcessInfo.processInfo.environment,
         @"execPath": NSBundle.mainBundle.executablePath,
         @"_asyncFlags": @{},
-        @"moduleLoadList": @[]
+        @"moduleLoadList": @[],
+        @"versions": @{@"node": @"0.10.4"},
+        @"version": @"0.10.4"
     } inContext:context];
     
     JSValue __weak *weakProcess = process;
