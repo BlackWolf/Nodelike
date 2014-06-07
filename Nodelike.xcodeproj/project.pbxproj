@@ -248,7 +248,6 @@
 		B5417311189415C000B6636B /* NLUDP.m in Sources */ = {isa = PBXBuildFile; fileRef = B5417310189415C000B6636B /* NLUDP.m */; };
 		B54173181894341600B6636B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54173171894341600B6636B /* XCTest.framework */; };
 		B54173191894341600B6636B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44642180AB78E009ADEF9 /* Foundation.framework */; };
-		B541731B1894341600B6636B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B541731A1894341600B6636B /* UIKit.framework */; };
 		B54173211894341600B6636B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B541731F1894341600B6636B /* InfoPlist.strings */; };
 		B541732B1894362000B6636B /* NLTimer_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B541732A1894362000B6636B /* NLTimer_Tests.m */; };
 		B541732C189436B700B6636B /* libNodelike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59EA08E180CB587005BF5C1 /* libNodelike.a */; };
@@ -566,7 +565,6 @@
 		B5417310189415C000B6636B /* NLUDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLUDP.m; sourceTree = "<group>"; };
 		B54173161894341600B6636B /* Nodelike Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nodelike Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54173171894341600B6636B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B541731A1894341600B6636B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B541731E1894341600B6636B /* Nodelike Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nodelike Tests-Info.plist"; sourceTree = "<group>"; };
 		B54173201894341600B6636B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B54173241894341600B6636B /* Nodelike Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nodelike Tests-Prefix.pch"; sourceTree = "<group>"; };
@@ -582,7 +580,6 @@
 		B56DEFAA187DBFA700FF1D8A /* http_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_parser.h; sourceTree = "<group>"; };
 		B56DEFBC187DC18100FF1D8A /* NLHTTPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLHTTPParser.h; sourceTree = "<group>"; };
 		B56DEFBD187DC18100FF1D8A /* NLHTTPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLHTTPParser.m; sourceTree = "<group>"; };
-		B572DDA818B4F6E3005E6403 /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		B572DDB418B55F01005E6403 /* Util_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util_Tests.m; sourceTree = "<group>"; };
 		B572DDBA18B56331005E6403 /* VM_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VM_Tests.m; sourceTree = "<group>"; };
 		B572DDCA18B90F16005E6403 /* Buffer_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Buffer_Tests.m; sourceTree = "<group>"; };
@@ -1372,7 +1369,6 @@
 			files = (
 				B541732C189436B700B6636B /* libNodelike.a in Frameworks */,
 				B54173181894341600B6636B /* XCTest.framework in Frameworks */,
-				B541731B1894341600B6636B /* UIKit.framework in Frameworks */,
 				B54173191894341600B6636B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2439,7 +2435,6 @@
 				33819FDE193F3F6100BDDF34 /* NodelikeResources */,
 				B5B44641180AB78E009ADEF9 /* Frameworks */,
 				B5B44640180AB78E009ADEF9 /* Products */,
-				B572DDA818B4F6E3005E6403 /* StyleSettings.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2461,7 +2456,6 @@
 				B59EA04F180CB38E005BF5C1 /* JavaScriptCore.framework */,
 				B5B44642180AB78E009ADEF9 /* Foundation.framework */,
 				B54173171894341600B6636B /* XCTest.framework */,
-				B541731A1894341600B6636B /* UIKit.framework */,
 				33819FDC193F3F6100BDDF34 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
