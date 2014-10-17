@@ -23,12 +23,6 @@
 
 #pragma mark - JSContext
 
-- (id)init {
-    self = [super init];
-    [NLContext attachToContext:self];
-    return self;
-}
-
 - (id)initWithVirtualMachine:(JSVirtualMachine *)virtualMachine {
     self = [super initWithVirtualMachine:virtualMachine];
     [NLContext attachToContext:self];
@@ -44,8 +38,11 @@
     
     uv_check_t *immediate_check_handle = malloc(sizeof(uv_check_t));
     uv_idle_t  *immediate_idle_handle  = malloc(sizeof(uv_idle_t));
+    
+    immediate_check_handle->data = (__bridge void *)(context);
     uv_check_init(eventLoop, immediate_check_handle);
     uv_unref((uv_handle_t *)immediate_check_handle);
+
     uv_idle_init(eventLoop, immediate_idle_handle);
 
 #ifdef DEBUG
@@ -61,9 +58,7 @@
         @"env":      NSProcessInfo.processInfo.environment,
         @"execPath": NSBundle.mainBundle.executablePath,
         @"_asyncFlags": @{},
-        @"moduleLoadList": @[],
-        @"versions": @{@"node": @"0.10.4"},
-        @"version": @"0.10.4"
+        @"moduleLoadList": @[]
     } inContext:context];
     
     JSValue __weak *weakProcess = process;
@@ -237,7 +232,7 @@ static dispatch_queue_t dispatchQueue () {
 }
 
 static void CheckImmediate(uv_check_t *handle, int status) {
-    JSContext *context  = JSContext.currentContext;
+    JSContext *context  = (__bridge JSContext *)(handle->data);
     JSValue   *process  = [context.virtualMachine nodelikeGet:&env_process_object];
     JSValue   *callback = [process valueForProperty:@"_immediateCallback"];
     [NLAsync makeGlobalCallback:callback fromObject:process withArguments:@[]];
