@@ -30,10 +30,9 @@
             [ctx evaluateScript:[NLNatives source:obj]];
             JSValue *e = ctx.exception;
             if (e)
-                XCTFail(@"%@: Context exception thrown: %@; stack: %@", obj, e, [e valueForProperty:@"stack"]);
+                XCTFail(@"Context exception thrown: %@; stack: %@", e, [e valueForProperty:@"stack"]);
             [NLContext runEventLoopSyncInContext:ctx];
             [ctx emitExit];
-            [NLContext runEventLoopSyncInContext:ctx];
         }
     }];
 }

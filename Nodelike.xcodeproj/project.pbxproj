@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */;
+			buildPhases = (
+				33819FD6193F3F0400BDDF34 /* Build Framework */,
+			);
+			dependencies = (
+				33819FD5193F3EF100BDDF34 /* PBXTargetDependency */,
+			);
+			name = "Nodelike Fat Binary";
+			productName = "Nodelike Fat Binary";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		33819F9E193F31BE00BDDF34 /* NLTTY.h in Headers */ = {isa = PBXBuildFile; fileRef = DA49974618D899400078FCB1 /* NLTTY.h */; };
 		33819F9F193F31BE00BDDF34 /* NSObject+Nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B29189E4F9400CC04D6 /* NSObject+Nodelike.h */; };
@@ -59,6 +74,7 @@
 		33819FFB193F3F9600BDDF34 /* cluster.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491F18C526DE00656FA3 /* cluster.js */; };
 		33819FFC193F3F9600BDDF34 /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492018C526DE00656FA3 /* console.js */; };
 		33819FFD193F3F9600BDDF34 /* constants.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492118C526DE00656FA3 /* constants.js */; };
+		33819FFE193F3F9600BDDF34 /* crypto-orig.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492218C526DE00656FA3 /* crypto-orig.js */; };
 		33819FFF193F3F9600BDDF34 /* dgram.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492318C526DE00656FA3 /* dgram.js */; };
 		3381A000193F3F9600BDDF34 /* dns.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492418C526DE00656FA3 /* dns.js */; };
 		3381A001193F3F9600BDDF34 /* domain.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492518C526DE00656FA3 /* domain.js */; };
@@ -88,7 +104,55 @@
 		3381A019193F3F9600BDDF34 /* util.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493D18C526DF00656FA3 /* util.js */; };
 		3381A01A193F3F9600BDDF34 /* vm.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493E18C526DF00656FA3 /* vm.js */; };
 		3381A01B193F3F9600BDDF34 /* zlib.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A493F18C526DF00656FA3 /* zlib.js */; };
+		33C3128119410DAD00F2541C /* nodelike-debug.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3127F19410D3900F2541C /* nodelike-debug.js */; };
 		33C312F2194123E700F2541C /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3128D194123A200F2541C /* crypto.js */; };
+		33C312F3194123EF00F2541C /* cjs-aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31290194123B300F2541C /* cjs-aes.js */; };
+		33C312F4194123EF00F2541C /* cjs-cipher-core.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31291194123B300F2541C /* cjs-cipher-core.js */; };
+		33C312F5194123EF00F2541C /* cjs-core.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31292194123B300F2541C /* cjs-core.js */; };
+		33C312F6194123EF00F2541C /* cjs-enc-base64.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31293194123B300F2541C /* cjs-enc-base64.js */; };
+		33C312F7194123EF00F2541C /* cjs-enc-hex.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31294194123B300F2541C /* cjs-enc-hex.js */; };
+		33C312F8194123EF00F2541C /* cjs-enc-latin1.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31295194123B300F2541C /* cjs-enc-latin1.js */; };
+		33C312F9194123EF00F2541C /* cjs-enc-utf8.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31296194123B300F2541C /* cjs-enc-utf8.js */; };
+		33C312FA194123EF00F2541C /* cjs-enc-utf16.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31297194123B300F2541C /* cjs-enc-utf16.js */; };
+		33C312FB194123EF00F2541C /* cjs-evpkdf.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31298194123B300F2541C /* cjs-evpkdf.js */; };
+		33C312FC194123EF00F2541C /* cjs-format-hex.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C31299194123B300F2541C /* cjs-format-hex.js */; };
+		33C312FD194123EF00F2541C /* cjs-format-openssl.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129A194123B300F2541C /* cjs-format-openssl.js */; };
+		33C312FE194123EF00F2541C /* cjs-hmac-md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129B194123B300F2541C /* cjs-hmac-md5.js */; };
+		33C312FF194123EF00F2541C /* cjs-hmac-ripemd160.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129C194123B300F2541C /* cjs-hmac-ripemd160.js */; };
+		33C31300194123EF00F2541C /* cjs-hmac-sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129D194123B300F2541C /* cjs-hmac-sha1.js */; };
+		33C31301194123EF00F2541C /* cjs-hmac-sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129E194123B300F2541C /* cjs-hmac-sha3.js */; };
+		33C31302194123EF00F2541C /* cjs-hmac-sha224.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C3129F194123B300F2541C /* cjs-hmac-sha224.js */; };
+		33C31303194123EF00F2541C /* cjs-hmac-sha256.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A0194123B300F2541C /* cjs-hmac-sha256.js */; };
+		33C31304194123EF00F2541C /* cjs-hmac-sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A1194123B300F2541C /* cjs-hmac-sha384.js */; };
+		33C31305194123EF00F2541C /* cjs-hmac-sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A2194123B300F2541C /* cjs-hmac-sha512.js */; };
+		33C31306194123EF00F2541C /* cjs-hmac.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A3194123B300F2541C /* cjs-hmac.js */; };
+		33C31307194123EF00F2541C /* crypto-js.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A4194123B300F2541C /* crypto-js.js */; };
+		33C31308194123EF00F2541C /* cjs-lib-typedarrays.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A5194123B300F2541C /* cjs-lib-typedarrays.js */; };
+		33C31309194123EF00F2541C /* cjs-md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A6194123B300F2541C /* cjs-md5.js */; };
+		33C3130A194123EF00F2541C /* cjs-mode-cfb.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A7194123B300F2541C /* cjs-mode-cfb.js */; };
+		33C3130B194123EF00F2541C /* cjs-mode-ctr-gladman.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A8194123B300F2541C /* cjs-mode-ctr-gladman.js */; };
+		33C3130C194123EF00F2541C /* cjs-mode-ctr.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312A9194123B300F2541C /* cjs-mode-ctr.js */; };
+		33C3130D194123EF00F2541C /* cjs-mode-ecb.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312AA194123B300F2541C /* cjs-mode-ecb.js */; };
+		33C3130E194123EF00F2541C /* cjs-mode-ofb.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312AB194123B300F2541C /* cjs-mode-ofb.js */; };
+		33C3130F194123EF00F2541C /* cjs-pad-ansix923.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312AD194123B300F2541C /* cjs-pad-ansix923.js */; };
+		33C31310194123EF00F2541C /* cjs-pad-iso10126.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312AE194123B300F2541C /* cjs-pad-iso10126.js */; };
+		33C31311194123EF00F2541C /* cjs-pad-iso97971.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312AF194123B300F2541C /* cjs-pad-iso97971.js */; };
+		33C31312194123EF00F2541C /* cjs-pad-nopadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B0194123B300F2541C /* cjs-pad-nopadding.js */; };
+		33C31313194123EF00F2541C /* cjs-pad-pkcs7.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B1194123B300F2541C /* cjs-pad-pkcs7.js */; };
+		33C31314194123EF00F2541C /* cjs-pad-zeropadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B2194123B300F2541C /* cjs-pad-zeropadding.js */; };
+		33C31315194123EF00F2541C /* cjs-pbkdf2.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B3194123B300F2541C /* cjs-pbkdf2.js */; };
+		33C31316194123EF00F2541C /* cjs-rabbit-legacy.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B4194123B300F2541C /* cjs-rabbit-legacy.js */; };
+		33C31317194123EF00F2541C /* cjs-rabbit.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B5194123B300F2541C /* cjs-rabbit.js */; };
+		33C31318194123EF00F2541C /* cjs-rc4.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B6194123B300F2541C /* cjs-rc4.js */; };
+		33C31319194123EF00F2541C /* cjs-ripemd160.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B8194123B300F2541C /* cjs-ripemd160.js */; };
+		33C3131A194123EF00F2541C /* cjs-sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312B9194123B300F2541C /* cjs-sha1.js */; };
+		33C3131B194123EF00F2541C /* cjs-sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BA194123B300F2541C /* cjs-sha3.js */; };
+		33C3131C194123EF00F2541C /* cjs-sha224.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BB194123B300F2541C /* cjs-sha224.js */; };
+		33C3131D194123EF00F2541C /* cjs-sha256.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BC194123B300F2541C /* cjs-sha256.js */; };
+		33C3131E194123EF00F2541C /* cjs-sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BD194123B300F2541C /* cjs-sha384.js */; };
+		33C3131F194123EF00F2541C /* cjs-sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BE194123B300F2541C /* cjs-sha512.js */; };
+		33C31320194123EF00F2541C /* cjs-tripledes.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312BF194123B300F2541C /* cjs-tripledes.js */; };
+		33C31321194123EF00F2541C /* cjs-x64-core.js in Resources */ = {isa = PBXBuildFile; fileRef = 33C312C0194123B300F2541C /* cjs-x64-core.js */; };
 		B5061A3A1815A9B00083AB4B /* NLCares.m in Sources */ = {isa = PBXBuildFile; fileRef = B5061A391815A9B00083AB4B /* NLCares.m */; };
 		B50A48EB18C01CDF00656FA3 /* test-timers.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E28418B94E32005E6403 /* test-timers.js */; };
 		B50A48EC18C01CF000656FA3 /* test-timers-zero-timeout.js in Resources */ = {isa = PBXBuildFile; fileRef = B572E28318B94E32005E6403 /* test-timers-zero-timeout.js */; };
@@ -122,6 +186,7 @@
 		B50A495218C5270000656FA3 /* cluster.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491F18C526DE00656FA3 /* cluster.js */; };
 		B50A495318C5270000656FA3 /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492018C526DE00656FA3 /* console.js */; };
 		B50A495418C5270000656FA3 /* constants.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492118C526DE00656FA3 /* constants.js */; };
+		B50A495518C5270000656FA3 /* crypto-orig.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492218C526DE00656FA3 /* crypto-orig.js */; };
 		B50A495618C5270000656FA3 /* dgram.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492318C526DE00656FA3 /* dgram.js */; };
 		B50A495718C5270000656FA3 /* dns.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492418C526DE00656FA3 /* dns.js */; };
 		B50A495818C5270000656FA3 /* domain.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492518C526DE00656FA3 /* domain.js */; };
@@ -315,6 +380,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59EA08D180CB587005BF5C1;
+			remoteInfo = Nodelike;
+		};
 		3381A01C193F3FA200BDDF34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
@@ -344,6 +416,7 @@
 		33819FE0193F3F6100BDDF34 /* NodelikeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NodelikeResources-Info.plist"; sourceTree = "<group>"; };
 		33819FE2193F3F6200BDDF34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		33819FE4193F3F6200BDDF34 /* NodelikeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodelikeResources-Prefix.pch"; sourceTree = "<group>"; };
+		33C3127F19410D3900F2541C /* nodelike-debug.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "nodelike-debug.js"; sourceTree = "<group>"; };
 		33C3128D194123A200F2541C /* crypto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = crypto.js; sourceTree = "<group>"; };
 		33C31290194123B300F2541C /* cjs-aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cjs-aes.js"; sourceTree = "<group>"; };
 		33C31291194123B300F2541C /* cjs-cipher-core.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cjs-cipher-core.js"; sourceTree = "<group>"; };
@@ -416,6 +489,7 @@
 		B50A491F18C526DE00656FA3 /* cluster.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cluster.js; sourceTree = "<group>"; };
 		B50A492018C526DE00656FA3 /* console.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = console.js; sourceTree = "<group>"; };
 		B50A492118C526DE00656FA3 /* constants.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = constants.js; sourceTree = "<group>"; };
+		B50A492218C526DE00656FA3 /* crypto-orig.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "crypto-orig.js"; sourceTree = "<group>"; };
 		B50A492318C526DE00656FA3 /* dgram.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dgram.js; sourceTree = "<group>"; };
 		B50A492418C526DE00656FA3 /* dns.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dns.js; sourceTree = "<group>"; };
 		B50A492518C526DE00656FA3 /* domain.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = domain.js; sourceTree = "<group>"; };
@@ -1397,6 +1471,7 @@
 			children = (
 				33C3128F194123A700F2541C /* crypto-js */,
 				33C3128D194123A200F2541C /* crypto.js */,
+				33C3127F19410D3900F2541C /* nodelike-debug.js */,
 				B50A490D18C526DE00656FA3 /* _debugger.js */,
 				B50A490E18C526DE00656FA3 /* _http_agent.js */,
 				B50A490F18C526DE00656FA3 /* _http_client.js */,
@@ -1418,6 +1493,7 @@
 				B50A491F18C526DE00656FA3 /* cluster.js */,
 				B50A492018C526DE00656FA3 /* console.js */,
 				B50A492118C526DE00656FA3 /* constants.js */,
+				B50A492218C526DE00656FA3 /* crypto-orig.js */,
 				B50A492318C526DE00656FA3 /* dgram.js */,
 				B50A492418C526DE00656FA3 /* dns.js */,
 				B50A492518C526DE00656FA3 /* domain.js */,
@@ -2540,6 +2616,7 @@
 				B59EA08D180CB587005BF5C1 /* Nodelike */,
 				B54C1F51180D37280051F826 /* uv */,
 				B54173151894341600B6636B /* Nodelike Tests */,
+				33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */,
 				33819FDA193F3F6100BDDF34 /* NodelikeResources */,
 			);
 		};
@@ -2550,7 +2627,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C312F3194123EF00F2541C /* cjs-aes.js in Resources */,
+				33C312F4194123EF00F2541C /* cjs-cipher-core.js in Resources */,
+				33C312F5194123EF00F2541C /* cjs-core.js in Resources */,
+				33C312F6194123EF00F2541C /* cjs-enc-base64.js in Resources */,
+				33C312F7194123EF00F2541C /* cjs-enc-hex.js in Resources */,
+				33C312F8194123EF00F2541C /* cjs-enc-latin1.js in Resources */,
+				33C312F9194123EF00F2541C /* cjs-enc-utf8.js in Resources */,
+				33C312FA194123EF00F2541C /* cjs-enc-utf16.js in Resources */,
+				33C312FB194123EF00F2541C /* cjs-evpkdf.js in Resources */,
+				33C312FC194123EF00F2541C /* cjs-format-hex.js in Resources */,
+				33C312FD194123EF00F2541C /* cjs-format-openssl.js in Resources */,
+				33C312FE194123EF00F2541C /* cjs-hmac-md5.js in Resources */,
+				33C312FF194123EF00F2541C /* cjs-hmac-ripemd160.js in Resources */,
+				33C31300194123EF00F2541C /* cjs-hmac-sha1.js in Resources */,
+				33C31301194123EF00F2541C /* cjs-hmac-sha3.js in Resources */,
+				33C31302194123EF00F2541C /* cjs-hmac-sha224.js in Resources */,
+				33C31303194123EF00F2541C /* cjs-hmac-sha256.js in Resources */,
+				33C31304194123EF00F2541C /* cjs-hmac-sha384.js in Resources */,
+				33C31305194123EF00F2541C /* cjs-hmac-sha512.js in Resources */,
+				33C31306194123EF00F2541C /* cjs-hmac.js in Resources */,
+				33C31307194123EF00F2541C /* crypto-js.js in Resources */,
+				33C31308194123EF00F2541C /* cjs-lib-typedarrays.js in Resources */,
+				33C31309194123EF00F2541C /* cjs-md5.js in Resources */,
+				33C3130A194123EF00F2541C /* cjs-mode-cfb.js in Resources */,
+				33C3130B194123EF00F2541C /* cjs-mode-ctr-gladman.js in Resources */,
+				33C3130C194123EF00F2541C /* cjs-mode-ctr.js in Resources */,
+				33C3130D194123EF00F2541C /* cjs-mode-ecb.js in Resources */,
+				33C3130E194123EF00F2541C /* cjs-mode-ofb.js in Resources */,
+				33C3130F194123EF00F2541C /* cjs-pad-ansix923.js in Resources */,
+				33C31310194123EF00F2541C /* cjs-pad-iso10126.js in Resources */,
+				33C31311194123EF00F2541C /* cjs-pad-iso97971.js in Resources */,
+				33C31312194123EF00F2541C /* cjs-pad-nopadding.js in Resources */,
+				33C31313194123EF00F2541C /* cjs-pad-pkcs7.js in Resources */,
+				33C31314194123EF00F2541C /* cjs-pad-zeropadding.js in Resources */,
+				33C31315194123EF00F2541C /* cjs-pbkdf2.js in Resources */,
+				33C31316194123EF00F2541C /* cjs-rabbit-legacy.js in Resources */,
+				33C31317194123EF00F2541C /* cjs-rabbit.js in Resources */,
+				33C31318194123EF00F2541C /* cjs-rc4.js in Resources */,
+				33C31319194123EF00F2541C /* cjs-ripemd160.js in Resources */,
+				33C3131A194123EF00F2541C /* cjs-sha1.js in Resources */,
+				33C3131B194123EF00F2541C /* cjs-sha3.js in Resources */,
+				33C3131C194123EF00F2541C /* cjs-sha224.js in Resources */,
+				33C3131D194123EF00F2541C /* cjs-sha256.js in Resources */,
+				33C3131E194123EF00F2541C /* cjs-sha384.js in Resources */,
+				33C3131F194123EF00F2541C /* cjs-sha512.js in Resources */,
+				33C31320194123EF00F2541C /* cjs-tripledes.js in Resources */,
+				33C31321194123EF00F2541C /* cjs-x64-core.js in Resources */,
 				33C312F2194123E700F2541C /* crypto.js in Resources */,
+				33C3128119410DAD00F2541C /* nodelike-debug.js in Resources */,
 				33819FE9193F3F9600BDDF34 /* _debugger.js in Resources */,
 				33819FEA193F3F9600BDDF34 /* _http_agent.js in Resources */,
 				33819FEB193F3F9600BDDF34 /* _http_client.js in Resources */,
@@ -2572,6 +2697,7 @@
 				33819FFB193F3F9600BDDF34 /* cluster.js in Resources */,
 				33819FFC193F3F9600BDDF34 /* console.js in Resources */,
 				33819FFD193F3F9600BDDF34 /* constants.js in Resources */,
+				33819FFE193F3F9600BDDF34 /* crypto-orig.js in Resources */,
 				33819FFF193F3F9600BDDF34 /* dgram.js in Resources */,
 				3381A000193F3F9600BDDF34 /* dns.js in Resources */,
 				3381A001193F3F9600BDDF34 /* domain.js in Resources */,
@@ -2716,6 +2842,7 @@
 				B50A495218C5270000656FA3 /* cluster.js in Resources */,
 				B50A495318C5270000656FA3 /* console.js in Resources */,
 				B50A495418C5270000656FA3 /* constants.js in Resources */,
+				B50A495518C5270000656FA3 /* crypto-orig.js in Resources */,
 				B50A495618C5270000656FA3 /* dgram.js in Resources */,
 				B50A495718C5270000656FA3 /* dns.js in Resources */,
 				B50A495818C5270000656FA3 /* domain.js in Resources */,
@@ -2781,6 +2908,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		33819FD6193F3F0400BDDF34 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 		};
 		B52B9B90189EC15600492856 /* Kill Simulator */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2893,6 +3034,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33819FD5193F3EF100BDDF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59EA08D180CB587005BF5C1 /* Nodelike */;
+			targetProxy = 33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */;
+		};
 		3381A01D193F3FA200BDDF34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33819FDA193F3F6100BDDF34 /* NodelikeResources */;
@@ -2930,6 +3076,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33819FD1193F3EEB00BDDF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33819FD2193F3EEB00BDDF34 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Testing;
+		};
+		33819FD3193F3EEB00BDDF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		33819FE6193F3F6200BDDF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3242,6 +3409,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33819FD1193F3EEB00BDDF34 /* Debug */,
+				33819FD2193F3EEB00BDDF34 /* Testing */,
+				33819FD3193F3EEB00BDDF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33819FE5193F3F6200BDDF34 /* Build configuration list for PBXNativeTarget "NodelikeResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
