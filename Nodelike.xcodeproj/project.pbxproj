@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */;
+			buildPhases = (
+				33819FD6193F3F0400BDDF34 /* Build Framework */,
+			);
+			dependencies = (
+				33819FD5193F3EF100BDDF34 /* PBXTargetDependency */,
+			);
+			name = "Nodelike Fat Binary";
+			productName = "Nodelike Fat Binary";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		33819F9E193F31BE00BDDF34 /* NLTTY.h in Headers */ = {isa = PBXBuildFile; fileRef = DA49974618D899400078FCB1 /* NLTTY.h */; };
 		33819F9F193F31BE00BDDF34 /* NSObject+Nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B29189E4F9400CC04D6 /* NSObject+Nodelike.h */; };
@@ -122,6 +137,7 @@
 		B50A495218C5270000656FA3 /* cluster.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A491F18C526DE00656FA3 /* cluster.js */; };
 		B50A495318C5270000656FA3 /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492018C526DE00656FA3 /* console.js */; };
 		B50A495418C5270000656FA3 /* constants.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492118C526DE00656FA3 /* constants.js */; };
+		B50A495518C5270000656FA3 /* crypto-orig.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492218C526DE00656FA3 /* crypto-orig.js */; };
 		B50A495618C5270000656FA3 /* dgram.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492318C526DE00656FA3 /* dgram.js */; };
 		B50A495718C5270000656FA3 /* dns.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492418C526DE00656FA3 /* dns.js */; };
 		B50A495818C5270000656FA3 /* domain.js in Resources */ = {isa = PBXBuildFile; fileRef = B50A492518C526DE00656FA3 /* domain.js */; };
@@ -315,6 +331,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B59EA08D180CB587005BF5C1;
+			remoteInfo = Nodelike;
+		};
 		3381A01C193F3FA200BDDF34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
@@ -344,6 +367,7 @@
 		33819FE0193F3F6100BDDF34 /* NodelikeResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NodelikeResources-Info.plist"; sourceTree = "<group>"; };
 		33819FE2193F3F6200BDDF34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		33819FE4193F3F6200BDDF34 /* NodelikeResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NodelikeResources-Prefix.pch"; sourceTree = "<group>"; };
+		33C3127F19410D3900F2541C /* nodelike-debug.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "nodelike-debug.js"; sourceTree = "<group>"; };
 		33C3128D194123A200F2541C /* crypto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = crypto.js; sourceTree = "<group>"; };
 		33C31290194123B300F2541C /* cjs-aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cjs-aes.js"; sourceTree = "<group>"; };
 		33C31291194123B300F2541C /* cjs-cipher-core.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "cjs-cipher-core.js"; sourceTree = "<group>"; };
@@ -416,6 +440,7 @@
 		B50A491F18C526DE00656FA3 /* cluster.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cluster.js; sourceTree = "<group>"; };
 		B50A492018C526DE00656FA3 /* console.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = console.js; sourceTree = "<group>"; };
 		B50A492118C526DE00656FA3 /* constants.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = constants.js; sourceTree = "<group>"; };
+		B50A492218C526DE00656FA3 /* crypto-orig.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "crypto-orig.js"; sourceTree = "<group>"; };
 		B50A492318C526DE00656FA3 /* dgram.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dgram.js; sourceTree = "<group>"; };
 		B50A492418C526DE00656FA3 /* dns.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dns.js; sourceTree = "<group>"; };
 		B50A492518C526DE00656FA3 /* domain.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = domain.js; sourceTree = "<group>"; };
@@ -1397,6 +1422,7 @@
 			children = (
 				33C3128F194123A700F2541C /* crypto-js */,
 				33C3128D194123A200F2541C /* crypto.js */,
+				33C3127F19410D3900F2541C /* nodelike-debug.js */,
 				B50A490D18C526DE00656FA3 /* _debugger.js */,
 				B50A490E18C526DE00656FA3 /* _http_agent.js */,
 				B50A490F18C526DE00656FA3 /* _http_client.js */,
@@ -1418,6 +1444,7 @@
 				B50A491F18C526DE00656FA3 /* cluster.js */,
 				B50A492018C526DE00656FA3 /* console.js */,
 				B50A492118C526DE00656FA3 /* constants.js */,
+				B50A492218C526DE00656FA3 /* crypto-orig.js */,
 				B50A492318C526DE00656FA3 /* dgram.js */,
 				B50A492418C526DE00656FA3 /* dns.js */,
 				B50A492518C526DE00656FA3 /* domain.js */,
@@ -2540,6 +2567,7 @@
 				B59EA08D180CB587005BF5C1 /* Nodelike */,
 				B54C1F51180D37280051F826 /* uv */,
 				B54173151894341600B6636B /* Nodelike Tests */,
+				33819FCF193F3EEB00BDDF34 /* Nodelike Fat Binary */,
 				33819FDA193F3F6100BDDF34 /* NodelikeResources */,
 			);
 		};
@@ -2716,6 +2744,7 @@
 				B50A495218C5270000656FA3 /* cluster.js in Resources */,
 				B50A495318C5270000656FA3 /* console.js in Resources */,
 				B50A495418C5270000656FA3 /* constants.js in Resources */,
+				B50A495518C5270000656FA3 /* crypto-orig.js in Resources */,
 				B50A495618C5270000656FA3 /* dgram.js in Resources */,
 				B50A495718C5270000656FA3 /* dns.js in Resources */,
 				B50A495818C5270000656FA3 /* domain.js in Resources */,
@@ -2781,6 +2810,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		33819FD6193F3F0400BDDF34 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 		};
 		B52B9B90189EC15600492856 /* Kill Simulator */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2893,6 +2936,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33819FD5193F3EF100BDDF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B59EA08D180CB587005BF5C1 /* Nodelike */;
+			targetProxy = 33819FD4193F3EF100BDDF34 /* PBXContainerItemProxy */;
+		};
 		3381A01D193F3FA200BDDF34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 33819FDA193F3F6100BDDF34 /* NodelikeResources */;
@@ -2930,6 +2978,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33819FD1193F3EEB00BDDF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33819FD2193F3EEB00BDDF34 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Testing;
+		};
+		33819FD3193F3EEB00BDDF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		33819FE6193F3F6200BDDF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3242,6 +3311,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33819FD0193F3EEB00BDDF34 /* Build configuration list for PBXAggregateTarget "Nodelike Fat Binary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33819FD1193F3EEB00BDDF34 /* Debug */,
+				33819FD2193F3EEB00BDDF34 /* Testing */,
+				33819FD3193F3EEB00BDDF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33819FE5193F3F6200BDDF34 /* Build configuration list for PBXNativeTarget "NodelikeResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
